@@ -1,0 +1,71 @@
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    background-color: black;
+}
+img{
+    width: 180px;
+    height: 100px;
+    &:hover{
+        cursor: pointer;
+    }
+    background-color: black;
+}
+.link-container{
+    display: flex;
+    width: 75vw;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    color: white;
+
+}
+li{
+    color: white;
+}
+a{
+    font-weight: 500;
+    padding-left: 2px;
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+        color: blue;
+    }
+    color: white;
+}
+  
+  .auth-Modle{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+   height: 5rem;
+    position: absolute;
+    right: .5rem;
+    padding: 1rem;
+    background-color: #ddd;
+  }
+  .profile-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: #ddd;
+  }
+  .profile-icon{
+    color: white;
+    display: flex;
+    background-color: #575757;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    line-height: 1rem;
+    width: 1rem;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+    }
+
+  }

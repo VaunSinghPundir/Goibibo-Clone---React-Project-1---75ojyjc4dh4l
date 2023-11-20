@@ -1,0 +1,22 @@
+{data: {…}, status: 201, statusText: '', headers: AxiosHeaders, config: {…}, …}
+config
+: 
+{transitional: {…}, adapter: Array(2), transformRequest: Array(1), transformResponse: Array(1), timeout: 0, …}
+data
+: 
+{status: 'success', token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N…jYwfQ.R0tMTiKDqWh1wN5Kp1X4Kv-6yTYd95NNFMAzO_QOAy8', data: {…}}
+headers
+: 
+AxiosHeaders {content-length: '393', content-type: 'application/json; charset=utf-8'}
+request
+: 
+XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
+status
+: 
+201
+statusText
+: 
+""
+[[Prototype]]
+: 
+Object
