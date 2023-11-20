@@ -16,7 +16,6 @@ export const Profile = () => {
    }
 
    const logout = () =>{
-    console.log()
    }
 
     return (
