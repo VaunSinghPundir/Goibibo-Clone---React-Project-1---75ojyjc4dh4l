@@ -9,7 +9,6 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
 export const AuthContext = createContext();
 
 function App() {
-  // let isUserLoggedIn;
   const isUserLoggedIn = sessionStorage.getItem("userToken") ? true: false
   // if(token){
   //   isUserLoggedIn(true)
