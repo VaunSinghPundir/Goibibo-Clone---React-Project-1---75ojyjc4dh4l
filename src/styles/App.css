@@ -3,20 +3,6 @@
   padding: 0;
 }
 .App-container{
-  background-color: #4b4a4a;
+  background-color: rgb(225, 231, 238);
   height: 100vh;
-}
-.form-container{
-  color: #ddd;
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-}
-input{
-  padding: .5rem 1rem;
-  border: none;
-  border-radius: .125rem;
 }

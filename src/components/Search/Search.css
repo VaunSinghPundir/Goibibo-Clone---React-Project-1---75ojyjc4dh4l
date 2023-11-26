@@ -1,0 +1,13 @@
+.search-container{
+    color: #ddd;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+  }
+  #from, #to{
+    padding: .5rem 1rem;
+    border: 1px solid black;
+    border-radius: 6px;
+  }

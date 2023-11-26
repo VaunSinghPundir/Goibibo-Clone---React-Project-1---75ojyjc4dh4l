@@ -1,11 +1,13 @@
 import "../styles/App.css";
 import { Route, Routes } from "react-router-dom";
 import { Navbar } from "./Navbar/Navbar";
-import {Signup } from "./pages/Signup.jsx"
-import { Login } from "./pages/Login.jsx";
+import {Signup } from "./Auth/Signup.jsx"
+import { Login } from "./Auth/Login.jsx";
 import { createContext, useContext, useState } from "react";
 import { faL } from "@fortawesome/free-solid-svg-icons";
-import Flight from "./Flights/Flight.jsx";
+import { Flight } from "./Flights/Flight.jsx";
+import { Search } from "./Search/Search.jsx";
+
 
 export const AuthContext = createContext();
 
@@ -19,11 +21,15 @@ function App() {
   //   isUserLoggedIn(false)
   // }
   const [isLoggedIn, setIsLoggedIn] = useState(isUserLoggedIn)
+  const [flightList,setFlightList] = useState([]);
+  // console.log(window.location.pathname)
+  // if(window.location.host ===)
   return (
     <div className="App-container">
       {/* navbar */}
       <AuthContext.Provider value={{isLoggedIn, setIsLoggedIn}}>
       <Navbar/>
+     
       <Routes>
         <Route path="/flight" element={<Flight/>}/>
         <Route path="/hotel" element={<h3>Hotels</h3>}/>
@@ -32,7 +38,6 @@ function App() {
         <Route path="/" element={<h3>Home</h3>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
-
       </Routes>
       </AuthContext.Provider>
     </div>

@@ -1,0 +1,14 @@
+.form-container{
+    color: #ddd;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+  }
+  input{
+    padding: .5rem 1rem;
+    border: 1px solid black;
+    border-radius: .125rem;
+  }

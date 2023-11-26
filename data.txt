@@ -20,6 +20,42 @@ statusText
 [[Prototype]]
 : 
 Object
+aircraftModel
+: 
+"65144571e16702a399cea7fb"
+airline
+: 
+"65144a1b664a43628887c45e"
+amenities
+: 
+(2) ['In-flight entertainment', 'Complimentary beverage']
+arrivalTime
+: 
+"09:15"
+availableSeats
+: 
+178
+departureTime
+: 
+"05:15"
+destination
+: 
+"BOM"
+duration
+: 
+4
+flightID
+: 
+"6E001-DELBOM-052"
+source
+: 
+"DEL"
+stops
+: 
+2
+ticketPrice
+: 
+2179
 
 git status
 git add .

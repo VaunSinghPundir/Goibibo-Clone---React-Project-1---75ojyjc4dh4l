@@ -1,0 +1,27 @@
+
+.flight-cards{
+  display: flex;
+    height: 150px;
+    width: 800px;
+    margin-top:20px;
+    border-radius: 15px;
+    color: black;
+    border: none;
+    box-shadow: 2px 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+    background-color: white;
+}
+.Card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+
+  .flight-dep, .flight-ariv{
+    display: flex;
+    flex-direction: column;
+  }
