@@ -11,3 +11,8 @@
     border: 1px solid black;
     border-radius: 6px;
   }
+  .day{
+    padding: .5rem 1rem;
+    /* border: 1px solid black; */
+    border-radius: 6px;
+  }

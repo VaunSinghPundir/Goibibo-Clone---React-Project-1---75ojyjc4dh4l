@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Flight.css";
 import { Search } from "../Search/Search";
-import { getHeaderProjectId } from "../../utils/headerId";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,17 +8,17 @@ import axios from "axios";
 export const Flight = () => {
   const [flightList, setFlightList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  // const config = getHeaderProjectId();
+
   const config = {
     headers: {
       projectID: "f104bi07c490",
     },
   };
-  function handleBtn(from, to) {
+  function handleBtn(from, to, day) {
     try {
       axios
         .get(
-          `https://academics.newtonschool.co/api/v1/bookingportals/flight/?search={"source":"${from}","destination":"${to}"}&day=Mon`,
+          `https://academics.newtonschool.co/api/v1/bookingportals/flight/?search={"source":"${from}","destination":"${to}"}&day=${day}"`,
           config
         )
         .then((res) => {
@@ -40,8 +39,8 @@ export const Flight = () => {
         <div>Loading...</div>
       ) : (
         <section>
-          {flightList.length > 0 &&
-            flightList.map((data) => {
+          {
+            flightList?.map((data) => {
               return (
                 <div key={data._id} className="Card-container">
                   <section className="flight-cards">

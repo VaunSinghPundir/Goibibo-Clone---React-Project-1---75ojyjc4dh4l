@@ -7,6 +7,7 @@ import { createContext, useContext, useState } from "react";
 import { faL } from "@fortawesome/free-solid-svg-icons";
 import { Flight } from "./Flights/Flight.jsx";
 import { Search } from "./Search/Search.jsx";
+import { Bus } from "./Bus/Bus.jsx";
 
 
 export const AuthContext = createContext();
@@ -34,7 +35,7 @@ function App() {
         <Route path="/flight" element={<Flight/>}/>
         <Route path="/hotel" element={<h3>Hotels</h3>}/>
         <Route path="/train" element={<h3>Trains</h3>}/>
-        <Route path="/bus" element={<h3>Buses</h3>}/>
+        <Route path="/bus" element={<Bus/>}/>
         <Route path="/" element={<h3>Home</h3>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
